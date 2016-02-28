@@ -9,7 +9,7 @@ python:
   - '3.5'
 
 before_install:
-  - docker build -t 18F/domain-scan
+  - docker build -t 18F/domain-scan .
   - docker run 18F/domain-scan /bin/sh -c "scan 18f.gsa.gov --scan inspect"
 
 install:
